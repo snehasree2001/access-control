@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <form action="php/login.php" method="post" class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <span id="togglePassword" class="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="js/access-control.js"></script>
+</body>
+</html>

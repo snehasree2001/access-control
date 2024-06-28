@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/access-control.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </li>
+                <li class="menu-item"><a href="pages/home.html" onclick="return checkAccess('home.html');">Home</a></li>
+                <li class="menu-item"><a href="pages/about-us.html" onclick="return checkAccess('about-us.html');">About Us</a></li>
+                <li class="menu-item"><a href="pages/contact-us.html" onclick="return checkAccess('contact-us.html');">Contact Us</a></li>
+                <li class="menu-item"><a href="pages/feedback.html" onclick="return checkAccess('feedback.html');">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="side-menu" class="side-menu">
+        <div class="side-menu-header">
+            <span onclick="toggleMenu()"><i class="fas fa-arrow-left"></i> Back</span>
+        </div>
+        <ul>
+            <li><a href="pages/home.html" onclick="return checkAccess('home.html');">Home</a></li>
+            <li><a href="pages/about-us.html" onclick="return checkAccess('about-us.html');">About Us</a></li>
+            <li><a href="pages/contact-us.html" onclick="return checkAccess('contact-us.html');">Contact Us</a></li>
+            <li><a href="pages/feedback.html" onclick="return checkAccess('feedback.html');">Feedback</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>Welcome to the Dashboard</h1>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="js/access-control.js"></script>
+</body>
+</html>

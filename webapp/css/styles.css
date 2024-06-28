@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul li {
+  display: none; /* Hide menu items by default */
+  margin: 0 10px;
+}
+
+header nav ul li.menu-icon {
+  display: block; /* Show only menu icon by default */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li.menu-icon i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -200px; /* Off-screen initially */
+  width: 200px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 60px;
+  transition: left 0.3s ease; /* Smooth transition for sliding effect */
+  z-index: 1;
+}
+
+.side-menu.open {
+  left: 0; /* Slide the side menu into view */
+}
+
+.side-menu .side-menu-header {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.side-menu .side-menu-header span {
+  color: white;
+  cursor: pointer;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 15px 20px;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg.jpg"); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  width: calc(100% - 30px);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1px;
+  cursor: pointer;
+}
+
+.toggle-password i {
+  font-size: 20px;
+  color: #555;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3555e8;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form button:hover {
+  background-color: #0832a4;
+}
+
+.error-container {
+  text-align: center;
+}
+.error-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #1e1919;
+}
+.error-container p {
+  font-size: 1.2em;
+  color: #545252;
+}
+.error-container a {
+  color: #4f075b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.error-container a:hover {
+  text-decoration: underline;
+}
+
+.link a {
+  color: #4f075b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link a:hover {
+  text-decoration: underline;
+}
+
+.link p {
+  font-size: 1.2em;
+  color: #545252;
+}
